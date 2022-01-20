@@ -1,0 +1,600 @@
+
+/* GENERAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&family=Rancho&display=swap');
+
+
+:root{
+    --blue: #0065FC;
+    --lightgrey: #F2F2F2;
+    --lightblue: #DEEBFF;
+    --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+
+
+
+/* HEADER */
+
+
+header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;     
+}
+
+#logo{
+    margin-right: auto ;
+    padding-left: 60px;
+}
+
+.navbar a:hover{
+    border-top: 2px solid var(--blue);
+}
+
+.navbar a{
+    padding: 30px;
+    color: var(--blue);
+}
+
+/*SEARCH-BAR*/
+
+
+.search{
+    padding: 30px;
+}
+
+.search-text{
+    margin-bottom: 30px;
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+}
+
+.search-bar .fa-map-marker-alt{
+    padding: 20px;
+    background-color: var(--lightgrey);
+    border-radius: 15px 0 0 15px;   
+}
+
+.search-bar input{
+    border: 1px solid var(--lightgrey);
+    padding: 17.81px;
+    flex-basis: 20%;
+}
+
+.search-bar ::placeholder{
+    font-weight: bold;
+    font-size: large;
+    color: black;  
+}
+
+.search-bar button{
+    padding: 0 20px;
+    background-color: var(--blue);
+    border-radius: 0 15px 15px 0;
+    border: none;
+}
+
+.search-bar button p{
+    font-weight: bold;
+    font-size: large;
+    color: white;
+    margin: 18px 0;
+}
+
+.search-bar button i{
+    display: none;
+}
+.search-bar button:hover{
+    background-color: rgb(51, 75, 141);
+    cursor:pointer
+   
+}
+
+
+
+/*FILTER*/
+
+
+.filter-icons{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 30px;
+    
+}
+
+.filter-icons span{
+    display: flex;
+    align-items: center;
+}
+
+.filter-icons span i{
+    display: flex;
+    padding: 20px;
+    background-color: var(--lightblue);
+    border-radius: 50%;
+    margin-right: 10px;
+    color: var(--blue);
+   
+}
+
+.fa-child{
+    justify-content: center;
+    width: 60px;
+
+}
+
+
+.filter-icons h3{
+    margin: 0 30px 0 0;
+    font-size: large;
+    text-transform: capitalize;
+    
+}
+
+.filter-icons span{
+    border: 3px solid var(--lightgrey);
+    border-radius: 50px;
+    margin-right: 25px;
+    border-left: none; 
+}
+
+.filter-icons span:hover{
+    background-color: var(--lightblue);
+    cursor: pointer;
+}
+.filter-result{
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.filter-result i{
+    padding: 5px 10px;
+    margin-right: 15px;
+    background-color: white;
+    border: 3px solid var(--lightgrey);
+    color: var(--blue);
+    border-radius: 50%;
+}
+
+
+/*STARS*/
+
+
+.blue{
+    color: var(--blue);
+}
+.grey{
+    color: var(--lightgrey);
+}
+
+/*HEBERGEMENTS*/
+
+
+
+
+#hebergements{
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+}
+
+
+/*MARSEILLE*/
+
+
+.marseille-hotels{
+    flex-basis: 66%;
+    background-color: var(--lightgrey);
+    border-radius: 15px;
+    padding: 20px;
+    
+}
+
+.marseille-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.marseille-cards .card{
+    flex-basis: 30%;
+    background-color: white;
+    border-radius: 15px;
+    border: 5px solid white;
+    flex-grow: 1;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+}
+
+.marseille-cards .card:hover{
+    transform: scale(1.01);
+}
+
+.marseille-cards img{
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.card .card-details{
+    padding: 10px;
+}
+
+.card-details h3{
+    margin: 0;
+}
+.card-details p{
+    margin: 0 0 5px 0;
+}
+
+
+
+/*POPULAR*/
+
+
+
+.popular-hotels{
+    flex-basis: 33%;
+    background-color: var(--lightgrey);
+    border-radius: 15px;
+    padding: 20px;
+   
+
+}
+
+.popular-title{
+    display: flex;
+    align-items: center;
+}
+
+.popular-title h2{
+    margin-right: auto;
+
+}
+
+.popular-title i{
+    font-size: x-large;
+
+}
+
+.popular-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.popular-card{
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    flex-direction: row;
+    border: 5px solid white;
+    flex-basis: 30%;
+    flex-grow: 1;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+ 
+}
+
+.popular-card.first{
+    min-height: 155px;
+}
+.popular-card.second{
+    min-height: 155px;
+}
+.popular-card.third{
+    max-height: 155px;
+}
+
+
+.popular-card:hover{
+    transform: scale(1.01);
+}
+
+.popular-card img{
+    width: 130px;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+    
+}
+
+.popular-card-details{
+    position: relative;
+    padding: 10px;
+}
+
+.popular-card-details h3{
+    margin: 0;
+}
+
+.popular-card-details p{
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+.popular-card-details span{
+    position: absolute;
+    bottom: 10px;
+}
+
+
+
+
+
+
+/*ACTIVITIES*/
+
+
+.activities{
+    padding: 30px;
+   
+   
+}
+
+.activities-cards-list{ 
+    display: flex;
+    gap: 20px;
+}
+.activities-cards-list > div{
+    flex: 1;
+    border-radius: 15px;
+}
+.activities-card img{
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+.activities-card h3{
+    padding-left: 10px;
+    
+   
+}
+
+.activities-card{
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--box-shadow);
+   
+}
+.activities-card.first img, .activities-card.fourth img{
+    flex-basis: 90%; 
+}
+
+.activities-card.second img{
+    height: 230px;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.activities-card.second{
+    flex-basis: 70%;
+    
+    border-radius: 15px;
+}
+.activities-card.third{
+    flex-basis: 30%;
+    border-radius: 15px;
+}
+
+
+.activities-card.fifth{
+    flex-basis: 40%;
+    border-radius: 15px;
+}
+.activities-card.sixth{
+    flex-basis: 60%;
+    border-radius: 15px;
+}
+
+
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    justify-content: flex-start;
+    gap: 150px;
+    background-color: var(--lightgrey);  
+    padding: 30px 30px;
+}
+
+footer h4{
+    text-transform: none;
+}
+
+
+
+
+/*------------------------------------------------------------
+
+
+
+
+/*TABLETS VERSION*/
+
+@media(max-width:992px){
+
+    .filter-icons{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    #hebergements{
+        
+        flex-direction: column-reverse;
+    }
+
+    .popular-cards{
+        flex-direction: row;
+        flex-basis: 33%;
+    }
+
+    .popular-card.third{
+        max-height: none;
+    }
+   
+    .activities-card.sixth img{
+        height: 200px;
+    }
+
+
+    
+    
+    
+   
+    
+   
+}
+
+
+
+
+/*MOBILE VERSION*/
+
+@media  (max-width:768px) {
+
+    
+    /*HEADER*/
+
+    header{
+        flex-wrap: wrap;
+        
+    }
+    #logo{
+        margin-left: 250px;
+    }
+    .navbar{
+        display: flex;
+        flex-basis: 100%;
+        
+    }
+    .navbar a{
+        flex-basis: 50%;
+        border-bottom: 2px solid var(--lightgrey);
+        text-align: center;
+    }
+
+    .navbar a:hover{
+        border-bottom: 2px solid var(--blue);
+        border-top: none;
+    }
+    
+    /*SEARCH-BAR*/
+
+    .search-bar button p{
+        display: none;
+    }
+
+    .search-bar button i{
+        display: block;
+        padding: 20px 5px;
+        color: white;
+    }
+
+    /*FILTER*/
+
+    .filter-icons{
+        flex-wrap: wrap;
+        margin-bottom: 0;
+        gap: 15px;
+    }
+
+    .filter-icons > h3, .filter-icons span{
+        margin-right: 0;
+    }
+
+    /*HOTELS*/
+
+    #hebergements{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        
+    }
+
+    .popular-cards{
+        
+        flex-direction: column;
+    }
+    .popular-card img{
+        height: 175px;
+    }
+
+    .popular-card.third{
+        max-height: 185px;
+    }
+    
+    
+    .popular-card img{
+        width: 40%;
+    }
+
+    .marseille-hotels{
+        flex-basis: 100%;
+        background-color: white;
+    }
+    .marseille-cards .card{
+        flex-basis: 100%;
+    }
+
+    .marseille-cards img{
+        height: 180px;
+    }
+
+
+    /*ACTIVITIES*/
+
+    .activities-cards-list{ 
+        flex-direction: column;
+        
+    }
+  
+
+   .activities-card img{
+       flex-basis: 70%;
+       
+   }
+
+   .second {
+       max-height: 520px;
+   }
+   
+   
+   
+
+    /*FOOTER*/
+
+    footer{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    footer div{
+        flex-basis: 100%;
+    }
+}
+
+
+
