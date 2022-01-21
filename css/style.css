@@ -480,11 +480,12 @@ footer h4{
     /*HEADER*/
 
     header{
+
         flex-wrap: wrap;
         
     }
     #logo{
-        margin-left: 250px;
+        margin-left: auto;
     }
     .navbar{
         display: flex;
@@ -503,6 +504,10 @@ footer h4{
     }
     
     /*SEARCH-BAR*/
+
+    .search-bar input{
+        padding: 0;
+    }
 
     .search-bar button p{
         display: none;
