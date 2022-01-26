@@ -157,6 +157,7 @@ header{
 .filter-icons span:hover{
     background-color: var(--lightblue);
     cursor: pointer;
+    transform: scale(1.01);
 }
 .filter-result{
     display: flex;
@@ -363,18 +364,22 @@ header{
     border-radius: 15px 15px 0 0;
     object-fit: cover;
 }
-.activities-card h3{
+.activities-card h3 {
     padding-left: 10px;
     
    
 }
 
-.activities-card{
+.activities-card {
     display: flex;
     flex-direction: column;
-    box-shadow: var(--box-shadow);
-   
+    box-shadow: var(--box-shadow); 
 }
+
+.activities-card:hover {
+    transform: scale(1.01);
+}
+
 .activities-card.first img, .activities-card.fourth img{
     flex-basis: 90%; 
 }
