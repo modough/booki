@@ -74,12 +74,19 @@ header{
     border: 1px solid var(--lightgrey);
     padding: 17.81px;
     flex-basis: 20%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  
+
 }
 
 .search-bar ::placeholder{
     font-weight: bold;
     font-size: large;
-    color: black;  
+    color: black;
+    
+    
 }
 
 .search-bar button{
@@ -154,11 +161,16 @@ header{
     border-left: none; 
 }
 
-.filter-icons span:hover{
+.filter-icons span:hover {
     background-color: var(--lightblue);
     cursor: pointer;
     transform: scale(1.01);
 }
+
+.filter-icons span:hover > h3 {
+    color: var(--blue);
+}
+
 .filter-result{
     display: flex;
     align-items: center;
@@ -345,28 +357,29 @@ header{
 /*ACTIVITIES*/
 
 
-.activities{
+.activities {
     padding: 30px;
-   
    
 }
 
-.activities-cards-list{ 
+.activities-cards-list { 
     display: flex;
     gap: 20px;
 }
-.activities-cards-list > div{
+.activities-cards-list > div {
     flex: 1;
     border-radius: 15px;
+    height: auto;
 }
-.activities-card img{
+.activities-card img {
     width: 100%;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
 }
 .activities-card h3 {
     padding-left: 10px;
-    
+    margin: 20px 0;
+    justify-content: flex-end;
    
 }
 
@@ -374,6 +387,7 @@ header{
     display: flex;
     flex-direction: column;
     box-shadow: var(--box-shadow); 
+    border-radius: 15px;
 }
 
 .activities-card:hover {
@@ -385,7 +399,8 @@ header{
 }
 
 .activities-card.second img{
-    height: 230px;
+   max-height: 300px;
+   
 }
 
 .row{
@@ -394,16 +409,9 @@ header{
     gap: 20px;
 }
 
-.activities-card.second{
-    flex-basis: 70%;
-    
-    border-radius: 15px;
+.row div {
+    flex: 1;
 }
-.activities-card.third{
-    flex-basis: 30%;
-    border-radius: 15px;
-}
-
 
 .activities-card.fifth{
     flex-basis: 40%;
@@ -583,12 +591,13 @@ footer h4{
   
 
    .activities-card img{
-       flex-basis: 70%;
-       
+       height: 240px;
+         
    }
 
    .activities-card {
-       max-height: 520px;
+       max-height: 300px;
+       overflow: hidden;
    }
    
    
