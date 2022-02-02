@@ -73,7 +73,7 @@ header{
 .search-bar input{
     border: 1px solid var(--lightgrey);
     padding: 17.81px;
-    flex-basis: 20%;
+    padding-right: 70px;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
@@ -375,11 +375,13 @@ header{
     width: 100%;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
+    flex-basis: 90%;    
 }
 .activities-card h3 {
     padding-left: 10px;
     margin: 20px 0;
     justify-content: flex-end;
+    color: black;
    
 }
 
@@ -388,39 +390,36 @@ header{
     flex-direction: column;
     box-shadow: var(--box-shadow); 
     border-radius: 15px;
+    height: 100%; 
 }
 
 .activities-card:hover {
     transform: scale(1.01);
 }
 
-.activities-card.first img, .activities-card.fourth img{
-    flex-basis: 90%; 
-}
+
 
 .activities-card.second img{
    max-height: 300px;
    
 }
 
-.row{
+.row1{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    
 }
 
-.row div {
-    flex: 1;
+.row2 {
+    display: grid;
+    grid-column: 2fr 1fr;
+    gap: 20px;
 }
 
-.activities-card.fifth{
-    flex-basis: 40%;
-    border-radius: 15px;
-}
-.activities-card.sixth{
-    flex-basis: 60%;
-    border-radius: 15px;
-}
+
+
+
 
 
 
