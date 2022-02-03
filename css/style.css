@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&family=Rancho&display=swap');
 
 
-:root{
+:root {
     --blue: #0065FC;
     --lightgrey: #F2F2F2;
     --lightblue: #DEEBFF;
@@ -12,12 +12,12 @@
 }
 
 
-*{
+* {
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
 
-a{
+a {
     text-decoration: none;
     
 }
@@ -28,22 +28,22 @@ a{
 /* HEADER */
 
 
-header{
+header {
     display: flex;
     justify-content: flex-start;
     align-items: center;     
 }
 
-#logo{
+#logo {
     margin-right: auto ;
     padding-left: 60px;
 }
 
-.navbar a:hover{
+.navbar a:hover {
     border-top: 2px solid var(--blue);
 }
 
-.navbar a{
+.navbar a {
     padding: 30px;
     color: var(--blue);
 }
@@ -51,26 +51,26 @@ header{
 /*SEARCH-BAR*/
 
 
-.search{
+.search {
     padding: 30px;
 }
 
-.search-text{
+.search-text {
     margin-bottom: 30px;
 }
 
-.search-bar{
+.search-bar {
     display: flex;
     align-items: center;
 }
 
-.search-bar .fa-map-marker-alt{
+.search-bar .fa-map-marker-alt {
     padding: 20px;
     background-color: var(--lightgrey);
     border-radius: 15px 0 0 15px;   
 }
 
-.search-bar input{
+.search-bar input {
     border: 1px solid var(--lightgrey);
     padding: 17.81px;
     padding-right: 70px;
@@ -81,7 +81,7 @@ header{
 
 }
 
-.search-bar ::placeholder{
+.search-bar ::placeholder {
     font-weight: bold;
     font-size: large;
     color: black;
@@ -102,10 +102,10 @@ header{
     
 }
 
-.search-bar button.second{
+.search-bar button.second {
     display: none;
 }
-.search-bar button:hover{
+.search-bar button:hover {
     background-color: rgb(51, 75, 141);
     cursor:pointer
    
@@ -116,7 +116,7 @@ header{
 /*FILTER*/
 
 
-.filter-icons{
+.filter-icons {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -124,12 +124,12 @@ header{
     
 }
 
-.filter-icons span{
+.filter-icons span {
     display: flex;
     align-items: center;
 }
 
-.filter-icons span i{
+.filter-icons span i {
     display: flex;
     padding: 20px;
     background-color: var(--lightblue);
@@ -139,14 +139,14 @@ header{
    
 }
 
-.fa-child{
+.fa-child {
     justify-content: center;
     width: 60px;
 
 }
 
 
-.filter-icons h3{
+.filter-icons h3 {
     margin: 0 30px 0 0;
     font-size: large;
     text-transform: capitalize;
@@ -173,13 +173,13 @@ header{
 }
 
 
-.filter-result{
+.filter-result {
     display: flex;
     align-items: center;
     padding: 0 30px;
 }
 
-.filter-result i{
+.filter-result i {
     padding: 5px 10px;
     margin-right: 15px;
     background-color: white;
@@ -192,10 +192,10 @@ header{
 /*STARS*/
 
 
-.blue{
+.blue {
     color: var(--blue);
 }
-.grey{
+.grey {
     color: var(--lightgrey);
 }
 
@@ -204,7 +204,7 @@ header{
 
 
 
-#hebergements{
+#hebergements {
     display: flex;
     gap: 20px;
     padding: 30px;
@@ -214,7 +214,7 @@ header{
 /*MARSEILLE*/
 
 
-.marseille-hotels{
+.marseille-hotels {
     flex-basis: 66%;
     background-color: var(--lightgrey);
     border-radius: 15px;
@@ -222,13 +222,13 @@ header{
     
 }
 
-.marseille-cards{
+.marseille-cards {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.marseille-cards .card{
+.marseille-cards .card {
     flex-basis: 30%;
     background-color: white;
     border-radius: 15px;
@@ -238,26 +238,26 @@ header{
     
 }
 
-.marseille-cards .card:hover{
+.marseille-cards .card:hover {
     transform: scale(1.01);
 }
 
-.marseille-cards img{
+.marseille-cards img {
     width: 100%;
     height: 120px;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
 }
 
-.card .card-details{
+.card .card-details {
     padding: 10px;
 }
 
-.card-details h3{
+.card-details h3 {
     margin: 0;
     color: black;
 }
-.card-details p{
+.card-details p {
     margin: 0 0 5px 0;
     color: black;
 }
@@ -268,7 +268,7 @@ header{
 
 
 
-.popular-hotels{
+.popular-hotels {
     flex-basis: 33%;
     background-color: var(--lightgrey);
     border-radius: 15px;
@@ -277,29 +277,29 @@ header{
 
 }
 
-.popular-title{
+.popular-title {
     display: flex;
     align-items: center;
 }
 
-.popular-title h2{
+.popular-title h2 {
     margin-right: auto;
 
 }
 
-.popular-title i{
+.popular-title i {
     font-size: x-large;
 
 }
 
-.popular-cards{
+.popular-cards {
     display: flex;
     flex-direction: column;
     gap: 20px;
 
 }
 
-.popular-card{
+.popular-card {
     display: flex;
     background-color: white;
     border-radius: 15px;
