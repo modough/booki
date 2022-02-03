@@ -169,11 +169,9 @@ header{
     background-color: var(--lightblue);
     cursor: pointer;
     transform: scale(1.01);
-}
-
-.filter-icons span:hover > h3 {
     color: var(--blue);
 }
+
 
 .filter-result{
     display: flex;
