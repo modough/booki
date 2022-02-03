@@ -507,9 +507,7 @@ footer h4{
     
     /*SEARCH-BAR*/
 
-    .search-bar input{
-        padding: auto;
-    }
+  
 
     .search-bar button.first {
         display: none;
