@@ -89,21 +89,20 @@ header{
     
 }
 
-.search-bar button{
-    padding: 0 20px;
-    background-color: var(--blue);
-    border-radius: 0 15px 15px 0;
-    border: none;
-}
 
-.search-bar button p{
+
+.search-bar button.first {
     font-weight: bold;
     font-size: large;
     color: white;
-    margin: 18px 0;
+    background-color: var(--blue);
+    border-radius: 0 15px 15px 0;
+    border: none;
+    padding: 18px;
+    
 }
 
-.search-bar button i{
+.search-bar button.second{
     display: none;
 }
 .search-bar button:hover{
@@ -154,12 +153,17 @@ header{
     
 }
 
-.filter-icons span{
+.filter-icons span {
     border: 3px solid var(--lightgrey);
     border-radius: 50px;
     margin-right: 25px;
     border-left: none; 
+    font-size: large;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding-right: 20px;
 }
+
 
 .filter-icons span:hover {
     background-color: var(--lightblue);
@@ -404,23 +408,11 @@ header{
    
 }
 
-.row1{
-    display: flex;
-    flex-direction: column;
+.row {
+    display: grid;
     gap: 20px;
     
 }
-
-.row2 {
-    display: grid;
-    grid-column: 2fr 1fr;
-    gap: 20px;
-}
-
-
-
-
-
 
 
 /* FOOTER */
@@ -518,17 +510,23 @@ footer h4{
     /*SEARCH-BAR*/
 
     .search-bar input{
-        padding: 0;
+        padding: auto;
     }
 
-    .search-bar button p{
+    .search-bar button.first {
         display: none;
     }
 
-    .search-bar button i{
+    .search-bar button.second{
         display: block;
-        padding: 20px 5px;
+        padding: 18px;
         color: white;
+        font-weight: bold;
+        font-size: large;
+        background-color: var(--blue);
+        border-radius: 0 15px 15px 0;
+        border: none;
+        
     }
 
     /*FILTER*/
