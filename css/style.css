@@ -235,7 +235,7 @@ header{
     border: 5px solid white;
     flex-grow: 1;
     box-shadow: var(--box-shadow);
-    cursor: pointer;
+    
 }
 
 .marseille-cards .card:hover{
@@ -255,9 +255,11 @@ header{
 
 .card-details h3{
     margin: 0;
+    color: black;
 }
 .card-details p{
     margin: 0 0 5px 0;
+    color: black;
 }
 
 
@@ -304,49 +306,51 @@ header{
     flex-direction: row;
     border: 5px solid white;
     flex-basis: 30%;
-    flex-grow: 1;
+    flex: 1;
     box-shadow: var(--box-shadow);
-    cursor: pointer;
+    
  
 }
 
-.popular-card.first{
+.popular-card.first {
     min-height: 155px;
 }
-.popular-card.second{
+.popular-card.second {
     min-height: 155px;
 }
-.popular-card.third{
+.popular-card.third {
     max-height: 155px;
 }
 
 
-.popular-card:hover{
+.popular-card:hover {
     transform: scale(1.01);
 }
 
-.popular-card img{
-    width: 130px;
+.popular-card img {
+    width: 200px;
     object-fit: cover;
     border-radius: 15px 0 0 15px;
     
 }
 
-.popular-card-details{
+.popular-card-details {
     position: relative;
     padding: 10px;
 }
 
-.popular-card-details h3{
-    margin: 0;
+.popular-card-details h3 {
+    margin: 0; 
+    color: black;
 }
 
-.popular-card-details p{
+.popular-card-details p {
     margin-top: 5px;
     margin-bottom: 40px;
+    color: black; 
 }
 
-.popular-card-details span{
+.popular-card-details span {
     position: absolute;
     bottom: 10px;
 }
@@ -379,6 +383,11 @@ header{
     object-fit: cover;
     flex-basis: 90%;    
 }
+
+.activities-card .first img, .activities-card .second img, .activities-card .fourth img {
+    flex-basis: 95%;
+}
+
 .activities-card h3 {
     padding-left: 10px;
     margin: 20px 0;
@@ -402,7 +411,7 @@ header{
 
 
 .activities-card.second img{
-   max-height: 300px;
+   max-height: 320px;
    
 }
 
@@ -452,6 +461,9 @@ footer h4{
     .popular-cards{
         flex-direction: row;
         flex-basis: 33%;
+    }
+    .popular-card img {
+        width: 130px;
     }
 
     .popular-card.third{
