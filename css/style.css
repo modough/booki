@@ -384,7 +384,7 @@ header {
     flex-basis: 90%;    
 }
 
-.activities-card .first img, .activities-card .second img, .activities-card .fourth img {
+.activities-card.first img, .activities-card.second img, .activities-card.fourth img {
     flex-basis: 95%;
 }
 
