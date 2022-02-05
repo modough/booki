@@ -195,6 +195,7 @@ header {
 .blue {
     color: var(--blue);
 }
+
 .grey {
     color: var(--lightgrey);
 }
@@ -218,8 +219,7 @@ header {
     flex-basis: 66%;
     background-color: var(--lightgrey);
     border-radius: 15px;
-    padding: 20px;
-    
+    padding: 20px;    
 }
 
 .marseille-cards {
@@ -234,8 +234,7 @@ header {
     border-radius: 15px;
     border: 5px solid white;
     flex-grow: 1;
-    box-shadow: var(--box-shadow);
-    
+    box-shadow: var(--box-shadow);    
 }
 
 .marseille-cards .card:hover {
@@ -257,15 +256,14 @@ header {
     margin: 0;
     color: black;
 }
+
 .card-details p {
     margin: 0 0 5px 0;
     color: black;
 }
 
 
-
 /*POPULAR*/
-
 
 
 .popular-hotels {
@@ -273,8 +271,6 @@ header {
     background-color: var(--lightgrey);
     border-radius: 15px;
     padding: 20px;
-   
-
 }
 
 .popular-title {
@@ -284,19 +280,16 @@ header {
 
 .popular-title h2 {
     margin-right: auto;
-
 }
 
 .popular-title i {
     font-size: x-large;
-
 }
 
 .popular-cards {
     display: flex;
     flex-direction: column;
     gap: 20px;
-
 }
 
 .popular-card {
@@ -307,9 +300,7 @@ header {
     border: 5px solid white;
     flex-basis: 30%;
     flex: 1;
-    box-shadow: var(--box-shadow);
-    
- 
+    box-shadow: var(--box-shadow); 
 }
 
 .popular-card.first {
@@ -356,10 +347,6 @@ header {
 }
 
 
-
-
-
-
 /*ACTIVITIES*/
 
 
@@ -375,17 +362,14 @@ header {
 .activities-cards-list > div {
     flex: 1;
     border-radius: 15px;
-    height: auto;
+    
 }
 .activities-card img {
     width: 100%;
     border-radius: 15px 15px 0 0;
     object-fit: cover;
-    flex-basis: 90%;    
-}
-
-.activities-card.first img, .activities-card.second img, .activities-card.fourth img {
-    flex-basis: 95%;
+    flex-basis: 90%;  
+    overflow: hidden;   
 }
 
 .activities-card h3 {
@@ -408,17 +392,42 @@ header {
     transform: scale(1.01);
 }
 
-
-
-.activities-card.second img{
-   max-height: 320px;
-   
-}
-
 .row {
     display: grid;
-    gap: 20px;
+    gap: 20px; 
+    height: 600px;
+}
+
+.activities-card.second {
+    position: relative;
+    height: 400px;   
+}
+
+.activities-card.third {
+    position: relative;
+    height: 180px;   
+}
+
+.activities-card.third img {
+    height: 100px;
+       
+}
+.activities-card.sixth img {
+    height: 240px;
+}
+.activities-card.sixth {
+    position: relative;
+    height: 320px;
+
+}
+.activities-card.fifth img {
+    height: 180px;
+}
+.activities-card.fifth {
+    position: relative;
+    height: 260px;
     
+       
 }
 
 
@@ -469,6 +478,8 @@ footer h4{
     .popular-card.third{
         max-height: none;
     }
+   
+
    
     .activities-card.sixth img{
         height: 200px;
@@ -604,6 +615,13 @@ footer h4{
        max-height: 300px;
        overflow: hidden;
    }
+
+   .activities-card.third {
+    height: auto;
+   }
+       
+
+
    
    
    
