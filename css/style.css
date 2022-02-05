@@ -135,8 +135,7 @@ header {
 }
 
 .filter-elements {
-    display: flex;
-     
+    display: flex; 
     border-radius: 50px;
     border-left: none; 
     font-size: large;
