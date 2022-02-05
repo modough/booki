@@ -409,16 +409,16 @@ header {
 
 .activities-card.second {
     position: relative;
-    height: 400px;   
+    height: 380px;   
 }
 
 .activities-card.third {
     position: relative;
-    height: 180px;   
+    height: 200px;   
 }
 
 .activities-card.third img {
-    height: 100px;
+    height: 120px;
        
 }
 .activities-card.sixth img {
