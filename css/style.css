@@ -39,14 +39,15 @@ header {
     padding-left: 60px;
 }
 
-.navbar a:hover {
-    border-top: 2px solid var(--blue);
-}
-
 .navbar a {
     padding: 30px;
     color: var(--blue);
 }
+
+.navbar a:hover {
+    border-top: 2px solid var(--blue);
+}
+
 
 /*SEARCH-BAR*/
 
@@ -91,7 +92,7 @@ header {
 
 
 
-.search-bar button.first {
+.search-bar button {
     font-weight: bold;
     font-size: large;
     color: white;
@@ -120,14 +121,11 @@ header {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    row-gap: 20px;
+    column-gap: 30px;
     margin-bottom: 20px;
     padding: 30px;
     
-}
-.filter-icons > h3 {
-    margin-right: 30px;
-
 }
 
 .filter-icons h3::first-letter {
@@ -140,10 +138,7 @@ header {
     border-left: none; 
     font-size: large;
     font-weight: bold;  
-    margin-right: 30px;
     position: relative;
-    
-
 }
 
 .filter-elements i.fas {
@@ -212,11 +207,9 @@ header {
 /*HEBERGEMENTS*/
 
 
-
-
 #hebergements {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     padding: 30px;
 }
 
@@ -228,13 +221,13 @@ header {
     flex-basis: 66%;
     background-color: var(--lightgrey);
     border-radius: 15px;
-    padding: 20px;    
+    padding: 30px;    
 }
 
 .marseille-cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
 }
 
 .marseille-cards .card {
@@ -279,7 +272,7 @@ header {
     flex-basis: 33%;
     background-color: var(--lightgrey);
     border-radius: 15px;
-    padding: 20px;
+    padding: 30px;
 }
 
 .popular-title {
@@ -298,7 +291,9 @@ header {
 .popular-cards {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
+    width: 100%;
+    height: 500px;
 }
 
 .popular-card {
@@ -313,13 +308,15 @@ header {
 }
 
 .popular-card.first {
-    min-height: 155px;
+    max-height: 30%;
 }
+
 .popular-card.second {
-    min-height: 155px;
+    max-height: 30%;
 }
+
 .popular-card.third {
-    max-height: 155px;
+    max-height: 30%;
 }
 
 
@@ -328,13 +325,14 @@ header {
 }
 
 .popular-card img {
-    width: 200px;
+    width: 40%;
     object-fit: cover;
     border-radius: 15px 0 0 15px;
     
 }
 
 .popular-card-details {
+    flex-grow: 1;
     position: relative;
     padding: 10px;
 }
@@ -360,19 +358,18 @@ header {
 
 
 .activities {
-    padding: 30px;
-   
+    padding: 30px;  
 }
 
 .activities-cards-list { 
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 .activities-cards-list > div {
     flex: 1;
-    border-radius: 15px;
-    
+    border-radius: 15px;   
 }
+
 .activities-card img {
     width: 100%;
     border-radius: 15px 15px 0 0;
@@ -385,8 +382,7 @@ header {
     padding-left: 10px;
     margin: 20px 0;
     justify-content: flex-end;
-    color: black;
-   
+    color: black;  
 }
 
 .activities-card {
@@ -403,46 +399,46 @@ header {
 
 .row {
     display: grid;
-    gap: 20px; 
+    gap: 30px; 
     height: 600px;
 }
 
 .activities-card.second {
     position: relative;
-    height: 380px;   
+    height: 390px;   
 }
 
 .activities-card.third {
     position: relative;
-    height: 200px;   
+    height: 180px;   
 }
 
 .activities-card.third img {
-    height: 120px;
-       
+    height: 100px;       
 }
+
 .activities-card.sixth img {
     height: 240px;
 }
+
 .activities-card.sixth {
     position: relative;
     height: 320px;
-
 }
+
 .activities-card.fifth img {
     height: 180px;
 }
+
 .activities-card.fifth {
     position: relative;
-    height: 260px;
-    
-       
+    height: 250px;       
 }
 
 
 /* FOOTER */
 
-footer{
+footer {
     display: flex;
     justify-content: flex-start;
     gap: 150px;
@@ -450,7 +446,7 @@ footer{
     padding: 30px 30px;
 }
 
-footer h4{
+footer h4 {
     text-transform: none;
 }
 
@@ -466,44 +462,24 @@ footer h4{
 
 @media screen and (max-width:992px){
 
-    .filter-icons{
+    .filter-icons {
         flex-wrap: wrap;
         gap: 20px;
     }
     
-    #hebergements{
-        
+    #hebergements {
         flex-direction: column-reverse;
     }
 
-    .popular-cards{
+    .popular-cards {
         flex-direction: row;
-        flex-basis: 33%;
+        height: auto;    
     }
-    .popular-card img {
-        width: 130px;
-    }
-
-    .popular-card.third{
-        max-height: none;
-    }
-   
-
-   
-    .activities-card.sixth img{
+    
+    .activities-card.sixth img {
         height: 200px;
-    }
-
-
-    
-    
-    
-   
-    
-   
+    }   
 }
-
-
 
 
 /*MOBILE VERSION*/
@@ -513,20 +489,20 @@ footer h4{
     
     /*HEADER*/
 
-    header{
-
-        flex-wrap: wrap;
-        
+    header {
+        flex-wrap: wrap;   
     }
-    #logo{
+
+    #logo {
         margin-left: auto;
     }
+
     .navbar{
         display: flex;
-        flex-basis: 100%;
-        
+        flex-basis: 100%;    
     }
-    .navbar a{
+
+    .navbar a {
         flex-basis: 50%;
         border-bottom: 2px solid var(--lightgrey);
         text-align: center;
@@ -537,24 +513,15 @@ footer h4{
         border-top: none;
     }
     
-    /*SEARCH-BAR*/
 
-  
+    /*SEARCH-BAR*/
 
     .search-bar button.first {
         display: none;
     }
 
     .search-bar button.second{
-        display: block;
-        padding: 18px;
-        color: white;
-        font-weight: bold;
-        font-size: large;
-        background-color: var(--blue);
-        border-radius: 0 15px 15px 0;
-        border: none;
-        
+        display: block;   
     }
 
     /*FILTER*/
@@ -571,34 +538,28 @@ footer h4{
 
     /*HOTELS*/
 
-    #hebergements{
+    #hebergements {
         flex-wrap: wrap;
         flex-direction: column-reverse;
         
     }
 
-    .popular-cards{
+    .popular-cards {
         
         flex-direction: column;
     }
-    .popular-card img{
+
+    .popular-card img {
+        width: 40%;
         height: 175px;
     }
 
-    .popular-card.third{
-        max-height: 185px;
-    }
-    
-    
-    .popular-card img{
-        width: 40%;
-    }
-
-    .marseille-hotels{
+    .marseille-hotels {
         flex-basis: 100%;
         background-color: white;
     }
-    .marseille-cards .card{
+
+    .marseille-cards .card {
         flex-basis: 100%;
     }
 
@@ -610,14 +571,11 @@ footer h4{
     /*ACTIVITIES*/
 
     .activities-cards-list{ 
-        flex-direction: column;
-        
+        flex-direction: column;   
     }
-  
 
    .activities-card img{
-       height: 240px;
-         
+       min-height: 240px;     
    }
 
    .activities-card {
@@ -626,8 +584,12 @@ footer h4{
    }
 
    .activities-card.third {
-    height: auto;
+        height: auto;
    }
+
+   .activities-card.fifth {
+        height: auto;
+    }
        
 
 
