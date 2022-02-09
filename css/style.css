@@ -521,7 +521,8 @@ footer h4 {
     }
 
     .search-bar button.second{
-        display: block;   
+        display: block;  
+        border-radius: 15px; 
     }
 
     /*FILTER*/
