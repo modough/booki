@@ -63,16 +63,17 @@ header {
 .search-bar {
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .search-bar .fa-map-marker-alt {
     padding: 20px;
-    background-color: var(--lightgrey);
+    background-color: var(--blue);
     border-radius: 15px 0 0 15px;   
 }
 
 .search-bar input {
-    border: 1px solid var(--lightgrey);
+    border: 1px solid var(--blue);
     padding: 17.81px;
     padding-right: 70px;
     text-overflow: ellipsis;
@@ -85,31 +86,29 @@ header {
 .search-bar ::placeholder {
     font-weight: bold;
     font-size: large;
-    color: black;
-    
-    
+    color: black;    
 }
 
-
-
 .search-bar button {
+    position: absolute;
     font-weight: bold;
     font-size: large;
     color: white;
     background-color: var(--blue);
     border-radius: 0 15px 15px 0;
     border: none;
-    padding: 18px;
-    
+    padding: 17.81px 18px 18px 18px;  
+    left: 308px;
+
 }
 
 .search-bar button.second {
     display: none;
 }
+
 .search-bar button:hover {
     background-color: rgb(51, 75, 141);
-    cursor:pointer
-   
+    cursor:pointer   
 }
 
 
